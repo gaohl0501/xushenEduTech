@@ -1,0 +1,41 @@
+<!--<?xml version="1.0" encoding="UTF-8"?>-->
+<!--<beans xmlns="http://www.springframework.org/schema/beans"-->
+       <!--xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"-->
+       <!--xmlns:dubbo="http://code.alibabatech.com/schema/dubbo"-->
+       <!--xsi:schemaLocation="http://www.springframework.org/schema/beans-->
+    <!--http://www.springframework.org/schema/beans/spring-beans.xsd        -->
+    <!--http://code.alibabatech.com/schema/dubbo        -->
+    <!--http://code.alibabatech.com/schema/dubbo/dubbo.xsd">-->
+
+    <!--&lt;!&ndash; 消费方应用名，用于计算依赖关系，不是匹配条件，不要与提供方一样-->
+    <!--<dubbo:application name="consumer-account-interface"/>-->
+	<!--<dubbo:consumer timeout="${dubbo.consumer.timeout}" check="false" />-->
+    <!--<dubbo:registry protocol="${dubbo.registry.protocol}" address="172.16.10.86:2181"  group="dubbo"  timeout="10000"/>-->
+ <!--&ndash;&gt;-->
+
+    <!--<dubbo:application name="consumer-account-interface"/>-->
+    <!--<dubbo:consumer timeout="60000" check="false" />-->
+    <!--<dubbo:registry protocol="zookeeper" address="172.16.10.15:2181"  group="dubbo"  timeout="10000"/>-->
+
+    <!--&lt;!&ndash; 生成远程服务代理，可以和本地bean一样使用demoService &ndash;&gt;-->
+    <!--&lt;!&ndash; 经销商银行账户信息，包括代扣账户 &ndash;&gt;-->
+    <!--&lt;!&ndash;<dubbo:reference id="dealerBankAccountService" interface="com.shenma.channel.service.module.DealerBankAccountService" timeout="60000"/>&ndash;&gt;-->
+    <!--&lt;!&ndash; 经销商法人 &ndash;&gt;-->
+    <!--&lt;!&ndash;<dubbo:reference id="dealerLegalPersonService" interface="com.shenma.channel.service.module.DealerLegalPersonService" timeout="60000"/>&ndash;&gt;-->
+    <!--&lt;!&ndash;<dubbo:reference id="dealerService" interface="com.shenma.channel.service.module.DealerService" timeout="60000"/>&ndash;&gt;-->
+    <!--&lt;!&ndash;<dubbo:reference id="dealerExtendService" interface="com.shenma.channel.service.module.DealerExtendService" timeout="60000"/>&ndash;&gt;-->
+
+    <!--&lt;!&ndash;<du
+    bbo:reference id="smartDataSyncService" interface="com.smjr.scf.api.SmartDataSyncService" timeout="60000" version="1.0.0"/>&ndash;&gt;-->
+    <!--&lt;!&ndash;<dubbo:reference id="iDlegalPersonRpcService" interface="com.shenma.chnl.basic.rpc.dealer.IDlegalPersonRpcService" timeout="60000"/>&ndash;&gt;-->
+    <!--&lt;!&ndash;<dubbo:reference id="iDealerRpcService" interface="com.shenma.chnl.basic.rpc.dealer.IDealerRpcService" timeout="60000"/>&ndash;&gt;-->
+    <!--&lt;!&ndash;<dubbo:reference id="iDealerBankAccountRpcService" interface="com.shenma.chnl.basic.rpc.dealer.IDealerBankAccountRpcService" timeout="60000"/>&ndash;&gt;-->
+    <!--&lt;!&ndash;<dubbo:reference id="iBankRpcService" interface="com.shenma.chnl.basic.rpc.basic.IBankRpcService" timeout="60000"/>&ndash;&gt;-->
+    <!--&lt;!&ndash;<dubbo:reference
+
+
+    id="iStoreRpcService" interface="com.shenma.chnl.basic.rpc.dealer.IStoreRpcService" timeout="60000"/>&ndash;&gt;-->
+
+    <!--<dubbo:reference id="depositService" interface="com.shenma.customer.account.service.DepositService" timeout="60000" />-->
+
+<!--</beans>-->
